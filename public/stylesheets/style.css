@@ -1,69 +1,75 @@
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-#anuncio{
-    	background-color: #FFFFFF;
-        border: #FFFFFF solid 30px;
-    }
-   	#ofertasRetro, #jumboOfertas{
-   		background-color: #0f66c0;
-    }
-    #ofertasRetro > h2{
-        color:#FFFFFF;
-    }
-    #descripcion{
-        color:#00008B;
-    }
-    #precioAnterior, #precioActual{
-        display: inline;
-    }
-    #precioAnterior{
-        text-decoration: line-through;
-    }
-    #precioActual{
-        color:red;
-    }
-    #masOfertas{
-        color:blue;
-        background-color: #FFD700;
-        border:#DAA520 solid 7px;
-    }
-    #containerOfertas{
-        background-color: #004591;
-    }
-    #ofertasCompleto{
-        display:flex;
-        flex-direction: column-reverse;
-    }
-    #titulo,#textoOfertas{
-        color:white;
-    }
-    #textoExclusivas{
-            color:gold;
-    }
-    .card-body > img{
-        width: 150px;
-        height: 150px;
-    }
-    #masOfertas:hover{
-    	background-color: red;
-    	border:red solid 7px;
-    	color:white;
-    }
-    body, .jumbotron, #btnBuscarOfertas{
-        padding:0px;
-        margin:0px;
-    }
-    @media(min-width: 576px){
-        #ofertasCompleto{
-            flex-direction: row;
-        }
-    }
-    #asd, .casd{
-    	margin:0px;
-    	padding: 0px;
-    }
-    div.footer{
+		body {
+		  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+		}
+		#anuncio{
+	    	background-color: #FFFFFF;
+	        border: #FFFFFF solid 30px;
+	    }
+	    #tituloAviso, #textoAviso{
+	    	color:#0F66C0;
+	    }
+	    #tituloAviso, #titulo{
+			font-family: PixelEmulatorFont!important;
+	    }
+	   	#ofertasRetro, #jumboOfertas{
+	   		background-color: #0f66c0;
+	    }
+	    #ofertasRetro > h2{
+	        color:#FFFFFF;
+	    }
+	    #descripcion{
+	        color:#00008B;
+	    }
+	    #precioAnterior, #precioActual{
+	        display: inline;
+	    }
+	    #precioAnterior{
+	        text-decoration: line-through;
+	    }
+	    #precioActual{
+	        color:red;
+	    }
+	    #masOfertas{
+	        color:blue;
+	        background-color: #FFD700;
+	        border:#DAA520 solid 7px;
+	    }
+	    #containerOfertas{
+	        background-color: #004591;
+	    }
+	    #ofertasCompleto{
+	        display:flex;
+	        flex-direction: column-reverse;
+	    }
+	    #titulo,#textoOfertas{
+	        color:white;
+	    }
+	    #textoExclusivas{
+	            color:gold;
+	    }
+	    .card-body > img{
+	        width: 150px;
+	        height: 150px;
+	    }
+	    #masOfertas:hover{
+	    	background-color: red;
+	    	border:red solid 7px;
+	    	color:white;
+	    }
+	    body, .jumbotron, #btnBuscarOfertas, .card{
+	        padding:0px;
+	        margin:0px;
+	    }
+	    @media(min-width: 576px){
+	        #ofertasCompleto{
+	            flex-direction: row;
+	        }
+	    }
+	    #asd, .casd{
+	    	margin:0px;
+	    	padding: 0px;
+	    }
+	    div.footer{
             background-color: #0f66c0;
             padding: 15px;
         }
@@ -110,6 +116,7 @@ body {
 
         .footer h3{
             margin-top: 10px;
+            font-family: PixelEmulatorFont!important;
         }
 
         @media (max-width: 768px){
@@ -160,6 +167,13 @@ body {
             padding: 5px;
             margin: 0px;
         }
+        .text-center .linea, #containerOfertas .linea{
+            border-width: 4px;
+            width: 25px;
+            border-color: #efdd45;
+            padding: 5px;
+            margin: 0px;
+        }
         .nav-envios-garantia{
 			background-color: #0F66C0;
 			display: flex;
@@ -184,9 +198,8 @@ body {
 		}
 		.botonConsolas{
 			background-color:#0F66C0;
-			background-image:url(public/images/BotonNav.png);
-			width: 37px;
-			height: 37px;
+			padding: 0px;
+			margin:0px;
 		}
 		.elementoJunto{
 			display: flex;
@@ -199,7 +212,7 @@ body {
 		}
 		.elemento-consola{
 			height: 40px;
-			width: 100px;
+			width: 140px;
 			display: flex;
 			justify-content: center;
 			border-right: #0F66C0 1px solid;
@@ -256,10 +269,12 @@ body {
         
         .par .nombre{
             text-align: center;
+            font-family: PixelEmulatorFont!important;
         }
 
         .none .nombre{
             text-align: center;
+            font-family: PixelEmulatorFont!important;
         }
 
         .none .descripcion p, .par .descripcion p{
@@ -281,4 +296,9 @@ body {
                 order: 1;
             }
 
+        }
+
+        @font-face{
+        	font-family: PixelEmulatorFont;
+			src: url(PixelEmulator-xq08.ttf);
         }
