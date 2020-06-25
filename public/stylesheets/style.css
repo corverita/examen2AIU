@@ -1,8 +1,284 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+#anuncio{
+    	background-color: #FFFFFF;
+        border: #FFFFFF solid 30px;
+    }
+   	#ofertasRetro, #jumboOfertas{
+   		background-color: #0f66c0;
+    }
+    #ofertasRetro > h2{
+        color:#FFFFFF;
+    }
+    #descripcion{
+        color:#00008B;
+    }
+    #precioAnterior, #precioActual{
+        display: inline;
+    }
+    #precioAnterior{
+        text-decoration: line-through;
+    }
+    #precioActual{
+        color:red;
+    }
+    #masOfertas{
+        color:blue;
+        background-color: #FFD700;
+        border:#DAA520 solid 7px;
+    }
+    #containerOfertas{
+        background-color: #004591;
+    }
+    #ofertasCompleto{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    #titulo,#textoOfertas{
+        color:white;
+    }
+    #textoExclusivas{
+            color:gold;
+    }
+    .card-body > img{
+        width: 150px;
+        height: 150px;
+    }
+    #masOfertas:hover{
+    	background-color: red;
+    	border:red solid 7px;
+    	color:white;
+    }
+    body, .jumbotron, #btnBuscarOfertas{
+        padding:0px;
+        margin:0px;
+    }
+    @media(min-width: 576px){
+        #ofertasCompleto{
+            flex-direction: row;
+        }
+    }
+    #asd, .casd{
+    	margin:0px;
+    	padding: 0px;
+    }
+    div.footer{
+            background-color: #0f66c0;
+            padding: 15px;
+        }
 
-a {
-  color: #00B7FF;
-}
+        .logo{
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer .link{
+            font-size: 12px;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        .footer p{
+            margin: 3px;
+        }
+
+        .footer a, .headfooter{
+            color: white;
+        }
+
+        .footer .headfooter{
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .footer .link:hover{
+            background-color: #004591;
+        }
+
+        .social a{
+            display: inline-block;
+            background-color: none;
+        }
+
+        .divfooter{
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border-color: #004591;
+            padding-left: 20px;
+        }
+
+        .footer h3{
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px){
+            .footer .divfooter p.parrafo-footer{
+                display: inline-block;
+                border-right: solid 1px;
+                border-color: #efdd45;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                margin: 5px;
+                margin-top: 0px;
+                margin-right: 0px;
+            }
+
+            .divfooter{
+                border: none;
+            }
+
+            p.social{
+                display: inline-block;
+            }
+
+            .footer p .nav-link{
+                padding: 0px;
+            }
+
+            .footer h3{
+                margin-top: 15px;
+            }
+
+
+        }
+
+        @media (max-width: 1200px){
+
+            .footer .social a{
+                padding: 2px;
+            }
+
+        }
+
+        .footer .linea{
+            border-width: 4px;
+            width: 25px;
+            border-color: #efdd45;
+            padding: 5px;
+            margin: 0px;
+        }
+        .nav-envios-garantia{
+			background-color: #0F66C0;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			align-items: baseline;
+		}
+		.textoPromocion{
+			color: #FFFFFF;
+			font-size: 80%;
+			margin: 0px;
+		}
+		.navbar-acercaDe{
+			background-color: #004591!important;
+			margin: 0px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.navbar-navegacionConsolas{
+			background-color: #00346E!important;
+		}
+		.botonConsolas{
+			background-color:#0F66C0;
+			background-image:url(public/images/BotonNav.png);
+			width: 37px;
+			height: 37px;
+		}
+		.elementoJunto{
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+		}
+		.elementoJuntoFin{
+			display: flex;
+			justify-content: flex-end;
+		}
+		.elemento-consola{
+			height: 40px;
+			width: 100px;
+			display: flex;
+			justify-content: center;
+			border-right: #0F66C0 1px solid;
+
+		}
+		@media(max-width: 991px) and (min-width: 441px){
+			.elemento-consola{
+				border-right: none;
+				width: auto;
+			}
+		}
+		#a-nintendo{
+			border-left: #0F66C0 1px solid;
+		}
+		#barra-busqueda{
+			border-radius: 0px;
+		}
+		.hoverNav{
+			color: #FFFFFF;
+			font-size: 80%;
+			display: flex;
+			align-items: center;
+		}
+		.hoverNav:hover{
+			border-bottom:  #efdd45 3px solid;
+			color: #FFFFFF;
+			text-decoration: none;
+			background-color: #004591;
+		}
+		.cont-acercade .linea{
+            justify-content: center;
+            border-width: 4px;
+            width: 25px;
+            border-color: #efdd45;
+            padding: 5px;
+        }
+
+        .par{
+            background-color: #0f66c0;
+        }
+
+        h4{
+            font-weight: bold;
+        }
+
+        .par p, .par h4{
+            color: white;
+        }
+
+        .cont-acercade p{
+            padding: 30px;
+            text-align: justify;
+        }
+        
+        .par .nombre{
+            text-align: center;
+        }
+
+        .none .nombre{
+            text-align: center;
+        }
+
+        .none .descripcion p, .par .descripcion p{
+            align-items: center;
+            font-size: 17px;
+        }
+
+        div.descripcion{
+            align-content: center;
+        }
+
+        @media (max-width: 768px){
+
+            .par .descripcion{
+                order: 2;
+            }
+
+            .par .nombre{
+                order: 1;
+            }
+
+        }
